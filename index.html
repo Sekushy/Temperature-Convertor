@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Drăghici Andrei Cosmin">
+    <title>Convertor | Welcome</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />   
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Temperature conversion</h1>
+                <form>
+                    <div class="form-group">
+                        <input id="celsiusInput" name="input" type="number" class="form-control form-control-lg" placeholder="Input a temperature in &#8451...">
+                        <div class="btn-group col-md-6 offset-md-4">
+                            <button id="farenheitButton" type="button" class="btn btn-primary mt-2" onclick="farenheitOnClick();">&#8457 </button>
+                            <button id="kelvinButton" type="button" class="btn btn-success mt-2" onclick="kelvinOnClick();">&#8490 </button>
+                            <button id="celsiusButton" type="button" class="btn btn-danger mt-2" onclick="celsiusOnClick();">&#8451 </button>
+                        </div>
+                    </div>
+                </form>
+
+                <div id="output">
+                    <div class="card bg-primary mb-2">
+                        <div class="card-block ml-3"> 
+                            <div id="farenheitOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success mb-2">
+                        <div class="card-block ml-3">
+                            <div id="kelvinOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-danger mb-2 celsiusOut">
+                        <div class="card-block ml-3">
+                            <div id="celsiusOutput"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="scripts/main.js"></script>
+</html>

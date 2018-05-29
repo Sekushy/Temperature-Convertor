@@ -1,0 +1,13 @@
+body {
+    margin-top: 50px;
+    background: #273238;
+    color: #fff;
+}
+
+input {
+    margin-top: 5px;
+}
+
+#submitButton {
+    margin-top: 5px;
+}
